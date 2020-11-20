@@ -38,46 +38,9 @@ def keras_predict(model, image):
 def get_pred_text_from_db(pred_class):
 	# conn = sqlite3.connect("gesture_db.db")
 	# cmd = "SELECT g_name FROM gesture WHERE g_id="+str(pred_class)
-	if pred_class == 0:
-		return "ㄱ"
-	elif pred_class == 1:
-		return "ㄴ"
-	elif pred_class == 2:
-		return "ㄷ"
-	elif pred_class == 3:
-		return "ㄹ"
-	elif pred_class == 4:
-		return "ㅁ"
-	elif pred_class == 5:
-		return "ㅂ"
-	elif pred_class == 6:
-		return "ㅅ"
-	elif pred_class == 7:
-		return "ㅇ"
-	elif pred_class == 8:
-		return "ㅈ"
-	elif pred_class == 9:
-		return "ㅊ"
-	elif pred_class == 10:
-		return "ㅋ"
-	elif pred_class == 11:
-		return "ㅌ"
-	elif pred_class == 12:
-		return "ㅍ"
-	elif pred_class == 13:
-		return "ㅎ"
-	elif pred_class == 14:
-		return "ㅏ"
-	elif pred_class == 15:
-		return "ㅓ"
-	elif pred_class == 16:
-		return "ㅗ"
-	elif pred_class == 17:
-		return "ㅜ"
-	elif pred_class == 18:
-		return "ㅡ"
-	elif pred_class == 19:
-		return "ㅣ"
+	pred_texts = ["k", "n", "d", "l", "m", "b", "s", "ng", "ja", "cha", "ka", "ta", "pa", "ha", "a", "eo", "o", "u", "eu", "i"]
+	return pred_texts[pred_class]
+	
 	# cursor = conn.execute(cmd)
 	# for row in cursor:
 	# 	return row[0]
