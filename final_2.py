@@ -40,7 +40,7 @@ def keras_predict(model, image):
 def get_pred_text_from_db(pred_class):
 	pred_texts = ["ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ", "ㅂ", "ㅅ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ", "ㅏ", "ㅓ", "ㅗ", "ㅜ", "ㅡ", "ㅣ"]
 	return pred_texts[pred_class]
-
+	
 def get_pred_from_contour(contour, thresh):
 	x1, y1, w1, h1 = cv2.boundingRect(contour)
 	save_img = thresh[y1:y1+h1, x1:x1+w1]
