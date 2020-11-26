@@ -39,7 +39,7 @@ def store_in_db(g_id, g_name):
 	conn.commit()
 	
 def store_images(g_id):
-	total_pics = 400
+	total_pics = 800
 	hist = get_hand_hist()
 	cam = cv2.VideoCapture(1)
 	if cam.read()[0]==False:
@@ -47,7 +47,7 @@ def store_images(g_id):
 	x, y, w, h = 300, 100, 300, 300
 
 	create_folder("gestures/"+str(g_id))
-	pic_no = 0
+	pic_no = 400
 	flag_start_capturing = False
 	frames = 0
 	
