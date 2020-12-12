@@ -6,9 +6,9 @@ import svm_model_train as st
 #Train SVM model
 model=st.trainSVM()
 
-with open("KSL/test_images2", "rb") as f:
+with open("test_images", "rb") as f:
     test_images = np.array(pickle.load(f))
-with open("KSL/test_labels2", "rb") as f:
+with open("test_labels", "rb") as f:
     test_labels = np.array(pickle.load(f), dtype=np.int32)
 
 count=0.0

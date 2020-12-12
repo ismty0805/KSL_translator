@@ -9,6 +9,7 @@ from threading import Thread
 import time
 import svm_model_train as st 
 import re
+from hangul_utils import split_syllable_char, split_syllables, join_jamos
 
 ###Only the parts that is different from final_2.py are commented.###
 

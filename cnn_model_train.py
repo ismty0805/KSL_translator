@@ -12,6 +12,7 @@ from keras.layers.convolutional import MaxPooling2D
 from keras.utils import np_utils
 from keras.callbacks import ModelCheckpoint
 from keras import backend as K
+from keras.models import load_model
 K.set_image_dim_ordering('tf')
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
@@ -60,12 +61,17 @@ def train():
 		val_images = np.array(pickle.load(f))
 	with open("val_labels", "rb") as f:
 		val_labels = np.array(pickle.load(f), dtype=np.int32)
-
+	with open("test_images", "rb") as f:
+		test_images = np.array(pickle.load(f))
+	with open("test_labels", "rb") as f:
+		test_labels = np.array(pickle.load(f), dtype=np.int32)
 	## 이미지 크기 조절
 	train_images = np.reshape(train_images, (train_images.shape[0], image_x, image_y, 1))
 	val_images = np.reshape(val_images, (val_images.shape[0], image_x, image_y, 1))
 	train_labels = np_utils.to_categorical(train_labels)
 	val_labels = np_utils.to_categorical(val_labels)
+	test_images = np.reshape(test_images, (test_images.shape[0], image_x, image_y, 1))
+	test_labels = np_utils.to_categorical(test_labels)
 
 	print(val_labels.shape)
 
@@ -74,7 +80,7 @@ def train():
 	## model training
 	model.fit(train_images, train_labels, validation_data=(val_images, val_labels), epochs=15, batch_size=500, callbacks=callbacks_list)
 	## model evaluate
-	scores = model.evaluate(val_images, val_labels, verbose=0)
+	scores = model.evaluate(test_images, test_labels, verbose=0)
 	print("CNN Error: %.2f%%" % (100-scores[1]*100))
 
 train()
