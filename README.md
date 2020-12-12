@@ -28,7 +28,7 @@ Classes:
 <img width="45%" align="right" src="https://user-images.githubusercontent.com/62564712/101983488-9f5c2100-3cbe-11eb-92bd-52be29469490.PNG">
 
 </div>
-찍기전 사진, 찍고나서 thresh 사진
+Original frame, thresh frame
 
 ### 2. Capture
 
@@ -71,4 +71,4 @@ with more dropout rate
 ## Final Program
 [![KSL_translator](http://img.youtube.com/vi/K3tHbIjavdM/0.jpg)](https://youtu.be/K3tHbIjavdM?t=0s) 
 ## Tech Stack
-opencv, python, tensorflow
+OpenCV, python, tensorflow
