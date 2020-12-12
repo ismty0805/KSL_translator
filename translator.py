@@ -65,8 +65,9 @@ hist = get_hand_hist()
 x, y, w, h = 300, 100, 300, 300 #손 인식 구역 지정
 is_voice_on = True
 
-## img 기본설정 및 thresh(img의 histogram 기반 흑백 영상)형성 및 findcountours
-## 전체 img, 인식구역 thresh,   
+## img 기본설정
+## thresh(부드러운 흑백 video 화면) 형성
+## find countours   
 def get_img_contour_thresh(img):
    img = cv2.flip(img, 1) #좌우 반전
    imgHSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -79,7 +80,7 @@ def get_img_contour_thresh(img):
    thresh = cv2.threshold(blur,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)[1]
    thresh = cv2.merge((thresh,thresh,thresh))
    thresh = cv2.cvtColor(thresh, cv2.COLOR_BGR2GRAY)
-   thresh = thresh[y:y+h, x:x+w] ##크기 조정(img내 손 인식 구역과 동일)
+   thresh = thresh[y:y+h, x:x+w] ##thresh 크기 조정(img내 손 인식 구역과 동일)
    contours = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)[0]
    return img, contours, thresh
 
@@ -102,6 +103,9 @@ def text_mode(cam):
             if old_text == text:
                count_same_frame += 1
             else:
+               count_same_frame = 0
+            if count_same_frame > 20:
+               word = word + text
                count_same_frame = 0
          elif cv2.contourArea(contour) < 1000:
             text = ""
