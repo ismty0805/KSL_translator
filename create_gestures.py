@@ -4,13 +4,15 @@ import pickle, os, sqlite3, random
 
 image_x, image_y = 50, 50
 
+## hist 정보를 로드하고 반환
 def get_hand_hist():
 	with open("hist", "rb") as f:
 		hist = pickle.load(f)
 	return hist
 
+## create the "gestures" folder and database if not exist
 def init_create_folder_database():
-	# create the folder and database if not exist
+	# 
 	if not os.path.exists("gestures"):
 		os.mkdir("gestures")
 	if not os.path.exists("gesture_db.db"):
@@ -19,10 +21,12 @@ def init_create_folder_database():
 		conn.execute(create_table_cmd)
 		conn.commit()
 
+## folder_name 폴더를 생성한다(없으면)
 def create_folder(folder_name):
 	if not os.path.exists(folder_name):
 		os.mkdir(folder_name)
 
+## g_id 와 g_name을 database에 저장한다.
 def store_in_db(g_id, g_name):
 	conn = sqlite3.connect("gesture_db.db")
 	cmd = "INSERT INTO gesture (g_id, g_name) VALUES (%s, \'%s\')" % (g_id, g_name)
@@ -39,7 +43,7 @@ def store_in_db(g_id, g_name):
 	conn.commit()
 	
 def store_images(g_id):
-	total_pics = 1200
+	total_pics = 900
 	hist = get_hand_hist()
 	cam = cv2.VideoCapture(1)
 	if cam.read()[0]==False:
@@ -47,7 +51,7 @@ def store_images(g_id):
 	x, y, w, h = 300, 100, 300, 300
 
 	create_folder("gestures/"+str(g_id))
-	pic_no = 0
+	pic_no = 600
 	flag_start_capturing = False
 	frames = 0
 	
@@ -89,7 +93,7 @@ def store_images(g_id):
 		cv2.imshow("Capturing gesture", img)
 		cv2.imshow("thresh", thresh)
 		keypress = cv2.waitKey(1)
-		if keypress == ord('c'):
+		if keypress == ord('a'):
 			if flag_start_capturing == False:
 				flag_start_capturing = True
 				print("start capturing flag on")
