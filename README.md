@@ -38,7 +38,6 @@ Made 900 pictures for 20 classes.
 <img width="70%" align="center" src="https://user-images.githubusercontent.com/62564712/101984259-8013c280-3cc3-11eb-89a6-584e6e26b1ab.PNG">
 
 <br>
-<br>
 
 ### 3. Divide data set
 
@@ -74,7 +73,7 @@ with more dropout rate
 ## Final Program
 Click to Play <br>
 <br>
-[![KSL_translator](http://img.youtube.com/vi/K3tHbIjavdM/0.jpg)](https://youtu.be/K3tHbIjavdM?t=0s) {:.aligncenter}
+[![KSL_translator](http://img.youtube.com/vi/K3tHbIjavdM/0.jpg)](https://youtu.be/K3tHbIjavdM?t=0s)
 
 ## Tech Stack
 OpenCV, python, tensorflow
