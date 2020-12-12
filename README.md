@@ -25,7 +25,7 @@ Classes:
 
 <div>
 <img width="30%" src="https://user-images.githubusercontent.com/62564712/101983485-9a976d00-3cbe-11eb-992e-fd77fa88317c.PNG">
-<img width="55%" align="right" src="https://user-images.githubusercontent.com/62564712/101983488-9f5c2100-3cbe-11eb-92bd-52be29469490.PNG">
+<img width="57%" align="right" src="https://user-images.githubusercontent.com/62564712/101983488-9f5c2100-3cbe-11eb-92bd-52be29469490.PNG">
 
 </div>
 Creating histogram from real-time video<br>
