@@ -22,7 +22,6 @@ We created monochrome hand image dataset for use in training, validating, and te
 
 > ### 1. Set hand histogram
 > set_hand_histogram.py extracts your hand's color and make a histogram of it. You can extract the histogram of hand by pressing 'c', and save and exit by pressing 's'.
-
 > 
 > <div>
 > <img width="30%" alt="Original frame" src="https://user-images.githubusercontent.com/62564712/101983485-9a976d00-3cbe-11eb-992e-fd77fa88317c.PNG">
