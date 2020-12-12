@@ -68,8 +68,7 @@ Baseline model
 with batch normalization layer
 [cnn_wm_dropout.py](https://github.com/ismty0805/KSL_translator/blob/main/cnn_wm_dropout.py)
 with more dropout rate
-
 ## Final Program
-<iframe width="640" height="360" src="https://youtu.be/K3tHbIjavdM" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+[![KSL_translator](http://img.youtube.com/vi/K3tHbIjavdM/0.jpg)](https://youtu.be/K3tHbIjavdM?t=0s) 
 ## Tech Stack
 opencv, python, tensorflow
