@@ -20,7 +20,7 @@ Classes:
 
 
 ### 1. Set hand histogram
-- 'c' : exstract histogram<br>
+- 'c' : extract histogram<br>
 - 's' : save and exit
 
 <div>
