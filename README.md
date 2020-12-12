@@ -42,9 +42,9 @@ Made 900 pictures for 20 classes.
 
 ### 3. Divide data set
 
--Train data : 600 <br>
--Validate data : 150 <br>
--Test data : 150
+- Train data : 600 <br>
+- Validate data : 150 <br>
+- Test data : 150
 
 <br>
 
