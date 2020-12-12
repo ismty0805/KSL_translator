@@ -73,7 +73,8 @@ with batch normalization layer
 with more dropout rate
 ## Final Program
 Click to Play <br>
-[![KSL_translator](http://img.youtube.com/vi/K3tHbIjavdM/0.jpg)](https://youtu.be/K3tHbIjavdM?t=0s) {align = "center"}
+<br>
+[![KSL_translator](http://img.youtube.com/vi/K3tHbIjavdM/0.jpg)](https://youtu.be/K3tHbIjavdM?t=0s) {:.aligncenter}
 
 ## Tech Stack
 OpenCV, python, tensorflow
