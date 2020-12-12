@@ -42,7 +42,7 @@ def cnn_model():
 	model.add(Dense(num_of_classes, activation='softmax')) 
 	sgd = optimizers.SGD(lr=1e-2)
 	model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
-	filepath="'cnn_model_keras2_less_train.h5'"
+	filepath="cnn_model_keras2_less_train.h5"
 	checkpoint1 = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 	callbacks_list = [checkpoint1]
 	#from keras.utils import plot_model

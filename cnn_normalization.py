@@ -59,7 +59,6 @@ def train():
         train_images = np.array(pickle.load(f))
     with open("train_labels", "rb") as f:
         train_labels = np.array(pickle.load(f), dtype=np.int32)
-
     with open("val_images", "rb") as f:
         val_images = np.array(pickle.load(f))
     with open("val_labels", "rb") as f:
@@ -82,16 +81,7 @@ def train():
     model.fit(train_images, train_labels, validation_data=(val_images, val_labels), epochs=15, batch_size=500, callbacks=callbacks_list)
     scores = model.evaluate(test_images, test_labels, verbose=0)
     print("CNN Error: %.2f%%" % (100-scores[1]*100))
-    #model.save('cnn_model_keras2.h5')
+    model.save('cnn_model_keras2.h5')
 
-# train()
-# K.clear_session();
-with open("test_images", "rb") as f:
-    test_images = np.array(pickle.load(f))
-with open("test_labels", "rb") as f:
-    test_labels = np.array(pickle.load(f), dtype=np.int32)
-model = load_model('cnn_model_keras2_norm.h5')
-test_images = np.reshape(test_images, (test_images.shape[0], image_x, image_y, 1))
-test_labels = np_utils.to_categorical(test_labels)
-scores = model.evaluate(test_images, test_labels, verbose=0)
-print("CNN Error: %.2f%%" % (100-scores[1]*100))
+train()
+K.clear_session();
