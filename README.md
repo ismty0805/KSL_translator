@@ -21,7 +21,7 @@ Classes:
 
 ### 1. Set hand histogram
 #### 'c' : exstract histogram
-#### 's' : save and exi
+#### 's' : save and exit
 
 <div>
 <img width="40%" src="https://user-images.githubusercontent.com/62564712/101983485-9a976d00-3cbe-11eb-992e-fd77fa88317c.PNG">
@@ -70,6 +70,6 @@ with batch normalization layer
 with more dropout rate
 
 ## Final Program
-영상만
+<iframe width="640" height="360" src="https://drive.google.com/file/d/1ejuhWytrzw585jdFFoPDlih9ihEzzQ7f/view?usp=sharing" frameborder="0" gesture="media" allowfullscreen=""></iframe>
 ## Tech Stack
 opencv, python, tensorflow
