@@ -12,7 +12,7 @@ Classes
 <br>
 
 ## Creating data(train, validation, test)
-We created monochrome hand image dataset for use in training, validating, and testing of our model. It is because our system feeds monochrome hand images to clafficiation models.
+We created monochrome hand image dataset for use in training, validating, and testing of our model. It is because our system feeds monochrome hand images to classification models.
 <div><img width="32%" src="https://user-images.githubusercontent.com/62564712/101983460-8c495100-3cbe-11eb-8e72-600fc0f8a309.PNG">
 <img width="32%" src=https://user-images.githubusercontent.com/62564712/101983473-910e0500-3cbe-11eb-81bc-80af3068be6c.PNG>
 <img width="32%" src="https://user-images.githubusercontent.com/62564712/101983479-93705f00-3cbe-11eb-8939-944c821cfa6e.PNG">
