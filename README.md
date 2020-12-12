@@ -25,11 +25,11 @@ Classes:
 
 <div>
 <figure class = "image">
-<img width="30%" alt="Original frame" src="https://user-images.githubusercontent.com/62564712/101983485-9a976d00-3cbe-11eb-992e-fd77fa88317c.PNG">
+<img width="10%" alt="Original frame" src="https://user-images.githubusercontent.com/62564712/101983485-9a976d00-3cbe-11eb-992e-fd77fa88317c.PNG">
 <figcaption>"Original frame"</figcaption>
 </figure>
 <figure class = "image">
-<img width="57%" alt="Thresh frame" align="right" src="https://user-images.githubusercontent.com/62564712/101983488-9f5c2100-3cbe-11eb-92bd-52be29469490.PNG">
+<img width="27%" alt="Thresh frame" align="right" src="https://user-images.githubusercontent.com/62564712/101983488-9f5c2100-3cbe-11eb-92bd-52be29469490.PNG">
 <figcaption>"Thresh frame"</figcaption>
 </figure>
 </div>
