@@ -28,7 +28,7 @@ Classes:
 <img width="45%" align="right" src="https://user-images.githubusercontent.com/62564712/101983488-9f5c2100-3cbe-11eb-92bd-52be29469490.PNG">
 
 </div>
-Creating histogram from real-time video\n
+Creating histogram from real-time video<br>
 Original frame(left) Thresh frame(right)
 
 ### 2. Capture
@@ -42,9 +42,9 @@ Made 900 pictures for 20 classes.
 
 ### 3. Divide data set
 
-Train data : 600 <br>
-Validate data : 150 <br>
-Test data : 150
+-Train data : 600 <br>
+-Validate data : 150 <br>
+-Test data : 150
 
 <br>
 
