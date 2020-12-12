@@ -70,7 +70,7 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 [cnn_wm_dropout.py](https://github.com/ismty0805/KSL_translator/blob/main/cnn_wm_dropout.py) (with higher dropout rate)
 
 ## Final translator 
-translator.py runs the final translator program.
+translator.py runs the final translator program.<br>
 Below is our demonstration video. You can click the image to play. <br>
 [![KSL_translator](http://img.youtube.com/vi/K3tHbIjavdM/0.jpg)](https://youtu.be/K3tHbIjavdM?t=0s)
 
