@@ -20,8 +20,8 @@ Classes:
 
 
 ### 1. Set hand histogram
-#### 'c' : exstract histogram
-#### 's' : save and exit
+'c' : exstract histogram<br>
+'s' : save and exit
 
 <div>
 <img width="40%" src="https://user-images.githubusercontent.com/62564712/101983485-9a976d00-3cbe-11eb-992e-fd77fa88317c.PNG">
@@ -37,10 +37,12 @@ Made 900 pictures for 20 classes.
 
 <img width="100%" align="right" src="https://user-images.githubusercontent.com/62564712/101984259-8013c280-3cc3-11eb-89a6-584e6e26b1ab.PNG">
 
+<br>
+
 ### 3. Divide data set
-[load_images.py](https://github.com/ismty0805/KSL_translator/blob/main/load_images.py)
-train data : 600
-validate data : 150
+
+train data : 600 <br>
+validate data : 150 <br>
 test data : 150
 
 <br>
@@ -69,8 +71,8 @@ with batch normalization layer
 [cnn_wm_dropout.py](https://github.com/ismty0805/KSL_translator/blob/main/cnn_wm_dropout.py)
 with more dropout rate
 ## Final Program
-[![KSL_translator](http://img.youtube.com/vi/K3tHbIjavdM/0.jpg)](https://youtu.be/K3tHbIjavdM?t=0s) 
-
 Click to Play
+[![KSL_translator](http://img.youtube.com/vi/K3tHbIjavdM/0.jpg)](https://youtu.be/K3tHbIjavdM?t=0s) {align = "center"}
+
 ## Tech Stack
 OpenCV, python, tensorflow
